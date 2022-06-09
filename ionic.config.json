@@ -1,0 +1,7 @@
+{
+  "name": "ticketing-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
