@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>accueil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-margin-horizontal">
+      <ion-col class="ion-justify-content-center" *ngFor="let feature of features">
+        <ion-card class="ion-text-center">
+          <ion-card-header>
+            <div>
+              <ion-thumbnail>
+                <img [src]="feature.src" />
+              </ion-thumbnail>
+            </div>
+          </ion-card-header>
+          <ion-card-content>
+            {{ feature.name }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
